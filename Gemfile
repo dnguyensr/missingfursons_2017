@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '=5.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Puma as the web server for heroku deployment
 gem 'puma'
 # Devise to handle user authentication
-gem 'devise', '3.5.10'
+gem 'devise'
 # dotenv to load env file
 gem 'dotenv-rails'
 # Use Faker to generate content
