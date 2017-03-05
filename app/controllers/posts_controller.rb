@@ -88,10 +88,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def resource_found
-    render '/posts/resourcefound'
-  end
-
   def found_form
     render '/posts/foundform'
   end
