@@ -2,17 +2,15 @@ source 'https://rubygems.org'
 ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Puma as the web server for heroku deployment
 gem 'puma'
 # Devise to handle user authentication
-gem 'devise', '3.5.10'
+gem 'devise'
 # dotenv to load env file
 gem 'dotenv-rails'
-# Use Faker to generate content
-gem 'faker'
 # Use simple-form to create simpleforms
 gem 'simple_form'
 # Include Koala as requirement for posting on facebook
@@ -23,8 +21,6 @@ gem 'twitter'
 gem 'paperclip'
 # aws-sdk to handle image storage
 gem 'aws-sdk', '~> 2.3'
-# foundation for styling
-# gem 'foundation-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,12 +38,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 gem 'geokit-rails'
 
@@ -70,9 +60,6 @@ group :development do
   gem 'better_errors'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
-
-# favicon
-group :development do
+  # favicon
   gem 'rails_real_favicon'
 end
