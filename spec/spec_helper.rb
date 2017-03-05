@@ -16,10 +16,8 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require 'simplecov'
 require 'shoulda/matchers'
 
-SimpleCov.start 'rails'
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
