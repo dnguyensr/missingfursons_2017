@@ -2,23 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <%# this would now only load application.css, not the whole tree %>
-    <%= stylesheet_link_tag :application, params[:controller], :media => "all" %>
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <%= csrf_meta_tags %>
-    <!-- Attach the Table CSS and Javascript for responsive tables-->
-<!--     <link rel="stylesheet" href="responsive-tables.css">
- -->
- <!-- <script src="stylesheet" href="responsive-tables.js"></script> -->
+
     <%= render 'favicon' %>
     <title>MissingFursons</title>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-
-    <a href="/">
     <header>
       <div class="top-layer">
         <%=image_tag("ico-wo.svg", alt: "Missing Fursons Banner", :class => "image-container")%>
